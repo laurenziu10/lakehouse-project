@@ -1,0 +1,17 @@
+# Datenverarbeitung
+pandas==1.5.3
+pyarrow==11.0.0
+fastparquet==2023.4.0
+
+# PySpark und Delta Lake
+pyspark==3.3.2
+delta-spark==1.2.1
+
+# MinIO Client
+minio==7.1.6
+
+# Apache Superset
+apache-superset==2.0.0
+
+# Weitere nützliche Tools
+docker==6.0.1

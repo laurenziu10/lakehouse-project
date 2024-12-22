@@ -1,0 +1,49 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__
+*.so
+*.egg
+*.egg-info
+dist
+build
+*.log
+
+# Virtuelle Umgebungen
+venv/
+env/
+.venv/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Docker
+*.dockerignore
+Dockerfile
+docker-compose.yml
+
+# VSCode
+.vscode/
+
+# PyCharm
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# MinIO und andere Konfigurationsdateien
+minio_config.json
+
+# Apache Superset
+superset.db
+*.sqlite
+
+# Andere temporäre oder sensitive Dateien
+*.bak
+*.swp

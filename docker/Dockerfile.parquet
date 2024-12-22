@@ -1,0 +1,19 @@
+# Dockerfile für Parquet Storage
+
+# Verwende ein Python-Image als Basis
+FROM python:3.9-slim
+
+# Setze das Arbeitsverzeichnis
+WORKDIR /app
+
+# Installiere die notwendigen Python-Pakete für Parquet
+RUN pip install --no-cache-dir pyarrow fastparquet pandas
+
+# Füge ein Beispiel-Skript hinzu (optional)
+COPY ./scripts/data_processing.py /app/
+
+# Exponiere einen Port (falls benötigt)
+EXPOSE 8080
+
+# Setze den Befehl zum Starten des Containers
+CMD ["python", "data_processing.py"]

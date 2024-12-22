@@ -1,0 +1,19 @@
+# Dockerfile für Delta Storage
+
+# Verwende ein Spark-Image als Basis
+FROM bitnami/spark:3.2.1
+
+# Setze das Arbeitsverzeichnis
+WORKDIR /app
+
+# Installiere zusätzliche Python-Pakete (PySpark und Delta Lake)
+RUN pip install pyspark delta-spark
+
+# Füge Beispiel-Skripte hinzu (optional)
+COPY ./scripts/data_processing.py /app/
+
+# Exponiere einen Port (falls benötigt)
+EXPOSE 8080
+
+# Setze den Befehl zum Starten des Containers
+CMD ["python", "data_processing.py"]

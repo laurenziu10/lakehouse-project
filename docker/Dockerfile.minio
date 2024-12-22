@@ -1,0 +1,14 @@
+FROM minio/minio:latest
+
+# Kopiere die MinIO-Konfigurationsdatei
+COPY minio_config.json /root/.minio/config.json
+
+# Setze Umgebungsvariablen für MinIO
+ENV MINIO_ACCESS_KEY=minioaccesskey
+ENV MINIO_SECRET_KEY=miniosecretkey
+
+# Exponiere den MinIO-Server-Port
+EXPOSE 9000
+
+# Starte MinIO
+CMD ["server", "/data"]
