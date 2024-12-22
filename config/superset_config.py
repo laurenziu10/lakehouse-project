@@ -6,7 +6,7 @@ APP_NAME = "Lakehouse Dashboard"
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 # Sicherheitskonfiguration
-SECRET_KEY = 'your_secret_key_here'
+SECRET_KEY = 'c8e1f0a4a1e8e5c5e12bfaee6b643f3c2cd932b6159f34f4'
 SESSION_COOKIE_SECURE = False  # False für lokale Entwicklung
 CSRF_ENABLED = True
 

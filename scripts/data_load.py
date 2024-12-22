@@ -27,7 +27,7 @@ def load_and_save_as_delta(csv_file, delta_file):
     print(f"Data loaded and saved as Delta: {delta_file}")
 
 # Beispiel für das Laden von Daten und Speichern
-csv_file = 'data/sample_data.csv'
+csv_file = 'data/Amazon Sale Report.csv'
 parquet_file = 'data/sample_data.parquet'
 delta_file = 'data/sample_data_delta'
 
